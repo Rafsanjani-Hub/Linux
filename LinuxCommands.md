@@ -79,18 +79,24 @@ user@machine:~$ sudo apt update && sudo apt upgrade       # Update and Upgrade T
 &nbsp;
 
 ### 5. Regular Expression:
-- #### Step 1: Search a keyword from a file
+- #### Step 1: Search a keyword from a file:
   ```console
   user@machine:~$ grep 'keyword' fileName.txt
   user@machine:~$ cat fileName.txt | grep 'keyword'
   ```
 
-- #### Step 2: Count the number of fasta sequence from a file (.fasta)
+- #### Step 2: Search a keyword from multiple directories:
+  ```console
+  user@machine:~$ grep -r 'keyword' /home/user/Desktop      ### It will search pattern from multiple directories.
+  user@machine:~$ grep -r -i 'keyword' /home/user/Desktop   ### It will search pattern from multiple directories; additionally, it ignore the case. 
+  ```
+
+- #### Step 3: Count the number of fasta sequence from a file (`*.fasta`)
   ```console
   user@machine:~$ grep '>' fileName.fasta | wc -l              # Number of lines denotes by ( l )
   ```
 
-- #### Step 3: Gmail Pattern
+- #### Step 4: Gmail Pattern
   ```console
   user@machine:~$ echo '1hj..bjb....bjh..b@gmail.com'| egrep '@gmail.com$' | egrep '^[a-zA-Z]' | sed 's/@gmail.com//' | tr '-d' '.' | egrep '[a-zA-Z0-9]{7,29}' 
   user@machine:~$ echo '1hj..bjb....bjh..b@gmail.com'| egrep '@gmail.com$' | egrep '^[a-zA-Z]' | sed 's/@gmail.com//' | egrep '[a-zA-Z0-9.]{7,29}' 
