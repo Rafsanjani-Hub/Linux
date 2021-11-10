@@ -6,6 +6,6 @@ I heavily use Ubuntu OS for the research and general purposes. Here, I stored ou
 #### 2. [ Shell Programming ](https://github.com/mrzResearchArena/Linux-Documentation/blob/master/ShellProgramming.md)
 #### 3. [ System Control ](https://github.com/mrzResearchArena/Linux-Documentation/blob/master/system.md)
 #### 4. [ Remote Server Handling ](https://github.com/mrzResearchArena/Linux-Documentation/blob/master/RemoteServerHandling.md)
-#### 5. Shell-Scripts for Computational Biology/Bioinformatics: [Kundaje Lab](https://sites.google.com/site/anshulkundaje/inotes/programming/shell-scripts)
+#### 5. Shell-Scripts for Computational Biology: [Kundaje Lab](https://sites.google.com/site/anshulkundaje/inotes/programming/shell-scripts)
 
 
