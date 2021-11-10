@@ -1,6 +1,6 @@
 # Linux Documentation
 
-I heavily use Ubuntu OS for the research and general purposes. Here, I stored out some materials that I use almost daily.
+I heavily use Ubuntu OS for the research and general purposes. Here, I sorted out some materials that I use almost daily.
 
 #### 1. [ Core Linux Commands ](https://github.com/mrzResearchArena/Linux-Documentation/blob/master/LinuxCommands.md)
 #### 2. [ Shell Programming ](https://github.com/mrzResearchArena/Linux-Documentation/blob/master/ShellProgramming.md)
