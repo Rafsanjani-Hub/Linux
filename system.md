@@ -104,3 +104,6 @@ sleep 10 # Pause for 10 seconds
 nmcli radio wifi on
 echo 'Wi-Fi will turn on after a few seconds.'
 ```
+
+### 11. Battery Timing
+https://askubuntu.com/questions/69556/how-do-i-check-the-batterys-status-via-the-terminal
