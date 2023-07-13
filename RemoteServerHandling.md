@@ -30,23 +30,6 @@
   user@machine:~$ nproc                          # RAM Core
   ```
 
-- #### Step 4: HDD (Hard Disk Drive) Status
-
-  - ##### Step 4.1: Working Drive (Dual Boot Mode OS)
-    ```console
-    user@machine:~$ df -h                            # Show disk usage
-
-    user@machine:~$ du -h --max-depth=1 /home/user   # Show the directory space usage for the particular location.
-    user@machine:~$ du -h -s /home/user              # -s, is for the summarizing the given location size.
-    ```
-
-  - ##### Step 4.2: Whole HDD Information (Identifying the Partition Type)
-    ```console
-    user@machine:~$ sudo fdisk -l
-    ```
-
-&nbsp;
-
 ### 2. Ubuntu Installation for Deep Learning 
 - #### Seep 1: GPU Setup [ [by clicking here!](https://github.com/mrzResearchArena/Linux-Documentation/blob/master/installGPU.md) ]
   - Reference: Lambda Lab [ [by clicking here!](https://lambdalabs.com/lambda-stack-deep-learning-software) ]
