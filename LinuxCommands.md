@@ -64,7 +64,22 @@ user@machine:~$ sudo apt update && sudo apt upgrade       # Update and Upgrade T
 
 &nbsp;
 
-### 4. String Handling:
+### Step 4: Hard Disk Drive Status / Inquire File Size
+
+```console
+user@machine:~$ df -h                            # Show disk's space usage
+
+user@machine:~$ sudo fdisk -l                    # Whole Hard Disk Drive Information & Identifying the Partition Type
+
+user@machine:~$ du -h --max-depth=1 /home/user   # Show the directory space usage for the particular location.
+user@machine:~$ du -h -s /home/user              # -s, is for the summarizing the given location size.
+user@machine:~$ du -h anyName.txt                # Show file's space usage
+user@machine:~$ du -h anyName                    # Show directory's space usage
+```
+  
+&nbsp;
+
+### 5. String Handling:
 - #### Step 1: Replace text segment (using sed)
   ```console
   user@machine:~$ sed 's/oldText/newText/' fileName.txt        # Change the text segment without replacement) 
@@ -78,7 +93,7 @@ user@machine:~$ sudo apt update && sudo apt upgrade       # Update and Upgrade T
 
 &nbsp;
 
-### 5. Regular Expression:
+### 6. Regular Expression:
 - #### Step 1: Search a keyword from a file:
   ```console
   user@machine:~$ grep 'keyword' fileName.txt
@@ -104,15 +119,15 @@ user@machine:~$ sudo apt update && sudo apt upgrade       # Update and Upgrade T
 
 &nbsp;
 
-### 6. Download file from the website:
+### 7. Download file from the website:
 ```console
 user@machine:~$ wget 'ftp://ftp.ncbi.nlm.nih.gov/blast/db/nr.*.tar.gz'   # Download `nr` dataset from the NCBI website (FTP Server)
 ```
 
 &nbsp;
 
-### 7. Compress/Uncompress the File and Directory:
-- #### 7.1 Compress/Uncompress file using `gzip`
+### 8. Compress/Uncompress the File and Directory:
+- #### 8.1 Compress/Uncompress file using `gzip`
   ```console
   user@machine:~$ gzip   anyName.fasta                   # anyName.fasta    --> anyName.fasta.gz
   user@machine:~$ gunzip anyName.fasta.gz                # anyName.fasta.gz --> anyName.fasta      # gzip -d anyName.fasta.gz
@@ -121,7 +136,7 @@ user@machine:~$ wget 'ftp://ftp.ncbi.nlm.nih.gov/blast/db/nr.*.tar.gz'   # Downl
   user@machine:~$ gunzip *.fasta.gz                      # *.fasta.gz       --> *.fasta            # gzip -d *.fasta.gz
   ```
 
-- #### 7.2 Compress/Uncompress file using `bzip2`
+- #### 8.2 Compress/Uncompress file using `bzip2`
   ```console
   user@machine:~$ bzip2   anyName.fasta                  # anyName.fasta      --> anyName.fasta.bz2
   user@machine:~$ bunzip2 anyName.fasta.bz2              # anyName.fasta.bz2  --> anyName.fasta     # bzip2 -d anyName.fasta.bz2
@@ -130,20 +145,20 @@ user@machine:~$ wget 'ftp://ftp.ncbi.nlm.nih.gov/blast/db/nr.*.tar.gz'   # Downl
   user@machine:~$ bunzip2 *.fasta.bz2                    # *.fasta.bz2        --> *.fasta           # bzip2 -d *.fasta.bz2
   ```
 
-- #### 7.3 Compress/Uncompress file using `zip` (The most common technique)
+- #### 8.3 Compress/Uncompress file using `zip` (The most common technique)
   ```console 
   user@machine:~$ zip -r anyName.zip anyName             # anyName            --> anyName.zip
   user@machine:~$ unzip anyName.zip                      # anyName.zip        --> anyName
   ```
 
-- #### 7.4 Compress/Uncompress file using `.tar.gz or .tar`
-  - ##### 7.4.1 Compress Directory
+- #### 8.4 Compress/Uncompress file using `.tar.gz or .tar`
+  - ##### 8.4.1 Compress Directory
   ```console
   user@machine:~$ tar -cvf anyName.tar *.fasta           # -c, is for create a .tar file
   user@machine:~$ gzip anyName.tar                       # Or, bzip2 anyName.tar
   ```
 
-  - ##### 7.4.2 Uncompress Directory
+  - ##### 8.4.2 Uncompress Directory
   ```console
   user@machine:~$ gunzip anyName.tar.gz                   # Or, bunzip2 anyName.tar.bz2
   user@machine:~$ tar -xvf anyName.tar                    # -x, is for extract the *.tar file
@@ -154,14 +169,14 @@ user@machine:~$ wget 'ftp://ftp.ncbi.nlm.nih.gov/blast/db/nr.*.tar.gz'   # Downl
 
 &nbsp;
 
-### 8. Install ~.deb File:
+### 9. Install ~.deb File:
 ```console
 user@machine:~$ sudo apt install ./anyName.deb
 ```
 
 &nbsp;
 
-### 9. Space Optimization:
+### 10. Space Optimization:
 
 - #### Step 1: Uninstall all unused packages from virtual environment ####
   ```console
