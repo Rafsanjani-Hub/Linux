@@ -36,8 +36,10 @@ user@machine:~$ unity --reset-icons
 &nbsp;
 
 ### 5. TTY Mode:
-# We can use shortcut key: control + alter + F7    # Try F2, F3, ... F6 (i.e., F2 through F6)
+#### We can use shortcut key: control + alter + F7    # Try F2, F3, ... F6 (i.e., F2 through F6)
 This shoud bring up a text-based login prompt. Afterward, log in with your username (`whoami`) and password.
+
+#### We could use terminal or console, if we access via GUI mode.
 ```console
 user@machine:~$ sudo chvt 7                            # Try 1, 2, 3, ... 7
 ```
